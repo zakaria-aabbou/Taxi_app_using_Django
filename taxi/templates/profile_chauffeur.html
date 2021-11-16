@@ -1,0 +1,30 @@
+{% extends 'base2.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <div class="col-sm-9 col-md-9 col-lg-9 mx-auto">
+    {% include 'messages.html' %}
+    <div class="card card-signin my-5">
+      <div class="card-body">
+        <h2 class="card-title text-center">Profile Info <b>{{ user.username }}</b></h2>
+        <form method="post" novalidate class="form-signin">
+          {% csrf_token %}
+          <input type="hidden" name="next" value="{{ next }}">
+          {{ c_form|crispy }}
+          {{ i_form|crispy }}
+          <div class="text-center">
+            <button type="submit" class="btn btn-success">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+
+{% block javascript %}
+
+{% endblock %}

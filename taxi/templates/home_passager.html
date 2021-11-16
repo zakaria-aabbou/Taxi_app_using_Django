@@ -1,0 +1,67 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+
+{% block content %}
+<div id="info" style="border:2px solid rgb(74, 84, 82) ; visibility: hidden;">
+
+</div>
+<div id="msg">
+  {% include 'messages.html' %}
+</div>
+<div class="text-center">
+  <button id="demander_maintenant" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Demander maintenant!</button>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: #4abf3d;">
+        <h5 class="modal-title text-center font-weight-bold" id="exampleModalLabel">Saisir les coordonnées du voyage</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="form_demande">
+          <div class="form-group">
+            <label for="destination" class="col-form-label">Depart:</label>
+            <input type="text" class="form-control" id="depart">
+          </div>
+          <div class="form-group">
+            <label for="destination" class="col-form-label">Destination:</label>
+            <input type="text" class="form-control" id="destination">
+          </div>
+          <div class="form-group">
+            <label for="nombreDePlaces" class="col-form-label">Nombre de places:</label>
+            <input type="text" class="form-control" id="nombreDePlaces">
+          </div>
+        </form>
+        <div id="ajax-errors" class="alert alert-danger" role="alert" style="display: none;">
+          <strong>Whoops!</strong><br>
+          <span>Quelque chose ne marche pas ! s'il vous plait vérifier vos données </span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary btn-lg" id="demande_button"><span id="Commander_button">Commander un Taxi </span><i id="Commander_icon" class="fas fa-taxi"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="LatLng"></div>
+
+<!--The div element for the map -->
+<div id="map"></div>
+
+{% endblock %}
+
+
+
+{% block javascript %}
+
+{% include 'demande_modal.html'%}
+{% include 'script_map.html'%}
+<!-- {% include 'script_notifications.html'%} -->
+
+  {% endblock %}

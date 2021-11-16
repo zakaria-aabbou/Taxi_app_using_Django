@@ -1,0 +1,65 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><b>{{userc}}</b> a demander votre service.<br></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+            Depart  : <b>{{depart}}</b><br>
+            Destination : <b>{{dest}}</b><br>
+            Nombre de places : <b>{{nbPlaces}}</b><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Rejeter</button>
+        <button type="button" class="btn btn-primary" id="demande_accepter">Accepter</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="dropdown" style="margin-left: 33px;">
+           <a href="#" class="notification" onclick="return false;" role="button" data-toggle="dropdown" id="dropdownMenu1" data-target="#" style="float: left" aria-expanded="false" data-badge="">
+                <i style="width: 18px;height: 20px;" class="fa fa-bell" aria-hidden="true" ></i>
+
+            </a>
+
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#exampleModal">
+        <b>{{userc}}</b> a demander votre service.<br>
+    </a>
+
+  </div>
+</div><br><br>
+
+
+
+<div id="LatLng"></div>
+
+<!--The div element for the map -->
+<div id="map"></div>
+
+{% endblock %}
+
+
+
+{% block javascript %}
+
+{% include 'script_acceptation.html'%}
+{% include 'script_map_chauff.html'%}
+
+
+{% endblock %}

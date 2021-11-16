@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+	<div class="col-sm-9 col-md-7 col-lg-10 mx-auto">
+		<div class="card card-signin my-5">
+			<div class="card-body text-center">
+				<h2>Inscrivez-vous gratuitement</h2>
+				<p class="lead">Sélectionnez ci-dessous le type de compte que vous souhaitez créer</p>
+				<a href="{% url 'chauffeur_signup' %}" class="btn btn-student btn-lg" role="button">Chauffeur</a>
+				<a href="{% url 'passager_signup' %}" class="btn btn-teacher btn-lg" role="button">Passager</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+<script>
+
+			$( document ).ready(function() {
+			    console.log( "ready!" );			
+			    if ('{{statut}}' == 'True'){
+			    	//$("#info").css("visibility", "");
+					//$('#info').html("demande accepter par {{chauffeur}}");
+					//$('#demander_maintenant').html('Demander encore !');
+				}
+			});
+
+	
+	$('#demande_button').click(function() {
+
+		var depart = $('#depart').val();
+		var destination    = $('#destination').val();
+		var nombreDePlaces = $('#nombreDePlaces').val();
+
+
+		var Commander_button = $('#Commander_button');
+		Commander_button.html('Attendez SVP... ');
+
+		var Commander_icon = $('#Commander_icon');
+		Commander_icon.removeClass('fa-taxi').addClass('fa-spinner fa-pulse');
+
+		$.ajax({
+			type: "POST",
+			url : "/demande_passager/",
+			data: {
+			    depart : depart,
+				destination: destination,
+				nombreDePlaces: nombreDePlaces
+			},
+			success: function (response) {
+				$('#exampleModal').modal('hide')
+				$('#demander_maintenant').hide();
+				$("#info").css("visibility", "");
+				$('#info').html("Votre demande est diffusée à <b>1 TAXI</b>.<br>SVP, Attendez-vous qu'un chauffeur accepte votre demande <br> <i style='height: 35px;width: 35px;' class='fas fa-cog fa-spin'></i>");
+
+
+			},
+			error: function (response) {
+				var ajax_errors = $('#ajax-errors');
+				ajax_errors.css('display','block');
+				ajax_errors.find('strong').html('Whoops!');
+				ajax_errors.find('span').html("Quelque chose ne marche pas ! s'il vous plait vérifier vos données");
+			},
+			complete: function(){
+				Commander_button.html('Commander un Taxi ');
+				Commander_icon.removeClass('fa-spinner fa-pulse').addClass('fa-taxi');
+			}
+		})
+
+	})
+
+</script>
