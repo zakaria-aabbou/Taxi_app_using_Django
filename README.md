@@ -10,20 +10,20 @@ Unlike Uber, our project is imposed on the realization of a web application that
 **Screens:**
 <div align="left">
   <h2>Home page :</h2>
-  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/Taxi_app_using_Django/blob/main/screens/1.png" />
   <h2>Passenger page:</h2>
-  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/Taxi_app_using_Django/blob/main/screens/2.png" />
   <h2>Application form:</h2>
-  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/Taxi_app_using_Django/blob/main/screens/3.png" />
   <h2>Awaiting responses from drivers:</h2>
-  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/Taxi_app_using_Django/blob/main/screens/4.png" />
   <h2>The receipt of request by the driver:</h2>
-  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/Taxi_app_using_Django/blob/main/screens/5.png" />
   <h2>Take action on a request:</h2>
-  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/Taxi_app_using_Django/blob/main/screens/6.png" />
   <h2>Passenger position recovery:</h2>
-  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/Taxi_app_using_Django/blob/main/screens/7.png" />
   <h2>The receipt of an acceptance from a driver:</h2>
-  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/Taxi_app_using_Django/blob/main/screens/8.png" />
   
 </div>
