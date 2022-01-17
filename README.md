@@ -6,3 +6,24 @@ It is in this context that we thought of creating a web application that aims to
 Inspired by Uber, which is a private transport company that has developed an application allowing its users to request a trip, which will be sent directly to Uber drivers, who use their own cars and cover timetables and geographical areas of their choice.
 
 Unlike Uber, our project is imposed on the realization of a web application that does not use its own drivers but offers services to taxi drivers and others to passengers.
+
+**Screens:**
+<div align="left">
+  <h2>Home page :</h2>
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <h2>Passenger page:</h2>
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <h2>Application form:</h2>
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <h2>Awaiting responses from drivers:</h2>
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <h2>The receipt of request by the driver:</h2>
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <h2>Take action on a request:</h2>
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <h2>Passenger position recovery:</h2>
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  <h2>The receipt of an acceptance from a driver:</h2>
+  <img alt="Demo" src="https://github.com/zakaria-aabbou/DataWarehouse_project/blob/main/screens/1.png" />
+  
+</div>
