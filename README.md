@@ -1,6 +1,6 @@
 # Taxi_app_using_Django
 
-In the last decade, the number and extent of traffic jams have increased overall in Morocco, especially in the largest cities (Rabat, Casablanca, Marrakech, Agadir, etc.), the causes are multiple, the main one being the increase in traffic. automobile traffic (itself due to the increase in the population and its rate of automobile equipment).
+In the last decade, the number and extent of traffic jams have increased overall in Morocco, especially in the largest cities (Rabat, Casablanca, Marrakech, Agadir, etc..), the causes are multiple, the main one being the increase in traffic. automobile traffic (itself due to the increase in the population and its rate of automobile equipment).
 It is in this context that we thought of creating a web application that aims to limit traffic jams, make it easier for a passenger to find a taxi and at the same time provide a very important service to the taxi driver.
 
 Inspired by Uber, which is a private transport company that has developed an application allowing its users to request a trip, which will be sent directly to Uber drivers, who use their own cars and cover timetables and geographical areas of their choice.
