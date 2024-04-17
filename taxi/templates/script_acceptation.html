@@ -1,0 +1,27 @@
+<script>
+    $('#dropdownMenu1').click(function() {
+        $('#dropdownMenu1').removeClass('notification');
+    })
+    $('#demande_accepter').click(function() {
+    	
+    		$.ajax({
+			type: "POST",
+			url : "/demande_accepter/",
+			data: {id        : {{ id }},
+				   id_chauff : {{ user.id }}
+				},
+
+			success: function (response) {
+				$('#exampleModal').modal('hide')
+			},
+			error: function (response) {
+				console.log("error");
+			},
+			complete: function(){
+				console.log("complete");
+			}
+			})
+
+
+	})
+</script>

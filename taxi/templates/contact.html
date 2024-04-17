@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-md-1"></div>
+<div class="row">
+  <div class="col-sm-9 col-md-9 col-lg-9 mx-auto">
+    <div class="card card-signin my-5">
+    <div class="form-area" STYLE="padding: 20px;">
+        <form role="form" method="POST" action="/contacter/"> {% csrf_token %}
+			<br style="clear:both">
+				<h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
+			{% if form.errors %}
+		<p class="error"> sorry that's not a valid info </p><br/>
+		{% else %}
+		  <div class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+			Votre demande est bien envoyer!
+		  </div>
+		{% endif %}
+				<div class="form-group">
+					<input type="text" class="form-control" id="email" name="from_email" placeholder="Email" required>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+				</div>
+				<div class="form-group">
+					<textarea class="form-control" type="textarea" name="message" id="message" placeholder="Message" maxlength="1000" rows="7"></textarea>
+					<span class="help-block"><p id="characterLeft" class="help-block ">Ne passer pas 1000 mots.</p></span>
+				</div>      
+			<center><button type="submit" id="submit" name="submit" class="btn btn-primary pull-right" style="width:160px; height:40px;">Envoyer</button></center>
+        </form>
+    </div>
+
+	</div>
+  </div>
+</div>
+<script>
+
+</script>
+{% endblock %}
+
+{% block javascript %}
+
+{% endblock %}
